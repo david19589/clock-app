@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+#root {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+}
+* {
+  transition: all 0.3s linear;
+}
+body {
+  height: 120vh;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12px;
+  overflow: hidden;
+  background-image: url(assets/mobile/bg-image-daytime.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(0.7);
+}
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  height: 110vh;
+}
+@media(min-width: 768px) {
+  body {
+    background-image: url(assets/tablet/bg-image-daytime.jpg);
+    background-position: center;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+@media(min-width: 1440px) {
+  body {
+    background-image: url(assets/desktop/bg-image-daytime.jpg);
+    background-position: center;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+}

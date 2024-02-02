@@ -1,0 +1,250 @@
+.NewWindow {
+  margin-bottom: -330px;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  width: auto;
+  margin-left: -26px;
+  margin-right: -26px;
+  padding: 48px 26px 78px;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.NewWindowActive {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  width: auto;
+  margin-left: -26px;
+  margin-right: -26px;
+  margin-bottom: 0px;
+  padding: 38px 26px 78px;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.timeZoneDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.currentTimezone {
+  color: #303030;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.zone {
+  color: #303030;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.dayOfYearDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dayOfTheYear {
+  color: #303030;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.dayNumber {
+  color: #303030;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.dayOfWeekDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dayOfTheWeek {
+  color: #303030;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.weekDayNumber {
+  color: #303030;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.weekNumberDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.weekNumber {
+  color: #303030;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.weekNumberNumber {
+  color: #303030;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+@media (min-width: 768px) {
+  .NewWindow {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -64px;
+    margin-right: -64px;
+  }
+  .NewWindowActive {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -64px;
+    margin-right: -64px;
+  }
+  .bigDiv1 {
+    margin-left: -140px;
+  }
+  .bigDiv2 {
+    margin-left: -120px;
+  }
+  .timeZoneDiv {
+    display: grid;
+  }
+  .dayOfYearDiv {
+    display: grid;
+  }
+  .dayOfWeekDiv {
+    display: grid;
+  }
+  .weekNumberDiv {
+    display: grid;
+  }
+  .currentTimezone {
+    font-size: 13px;
+    letter-spacing: 2.6px;
+  }
+  .zone {
+    font-size: 40px;
+    line-height: 48.41px;
+    margin-top: -10px;
+  }
+  .dayOfTheYear {
+    font-size: 13px;
+    letter-spacing: 2.6px;
+  }
+  .dayNumber {
+    font-size: 40px;
+    line-height: 48.41px;
+    margin-top: -10px;
+  }
+  .dayOfTheWeek {
+    font-size: 13px;
+    letter-spacing: 2.6px;
+  }
+  .weekDayNumber {
+    font-size: 40px;
+    line-height: 48.41px;
+    margin-top: -10px;
+  }
+  .weekNumber {
+    font-size: 13px;
+    letter-spacing: 2.6px;
+  }
+  .weekNumberNumber {
+    font-size: 40px;
+    line-height: 48.41px;
+    margin-top: -10px;
+  }
+}
+@media (min-width: 1440px) {
+  .NewWindow {
+    margin-left: -165px;
+    margin-right: -165px;
+  }
+  .NewWindowActive {
+    margin-left: -165px;
+    margin-right: -165px;
+  }
+  .bigDiv1 {
+    margin-left: -260px;
+  }
+  .stick{
+    position: absolute;
+    width: 1px;
+    height: 252px;
+    opacity: 0.25;
+    background-color: #303030;
+  }
+  .bigDiv2 {
+    margin-left: -425px;
+  }
+  .currentTimezone {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .zone {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .dayOfTheYear {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .dayNumber {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .dayOfTheWeek {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .weekDayNumber {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .weekNumber {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .weekNumberNumber {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}

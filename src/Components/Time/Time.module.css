@@ -1,0 +1,170 @@
+.TimeDiv {
+  margin-top: auto;
+  margin-bottom: -20px;
+}
+.sunMorningDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.sun {
+  margin-right: 16px;
+}
+.goodMorning {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.itsCurrently {
+  display: none;
+}
+.timeZone {
+  display: flex;
+  align-items: baseline;
+}
+.time {
+  color: #fff;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -2.5px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  margin-right: 5px;
+}
+.GMT4 {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.location {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+.moreInfo {
+  border-radius: 28px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 115px;
+  height: 39px;
+  cursor: pointer;
+}
+.more {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+.arrow {
+  border-radius: 28px;
+  margin-right: 4px;
+}
+.arrowActive {
+  border-radius: 28px;
+  margin-right: 4px;
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  .goodMorning {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+  .itsCurrently {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    display: flex;
+  }
+  .time {
+    font-size: 175px;
+    line-height: 175px;
+    letter-spacing: -4.38px;
+  }
+  .GMT4 {
+    font-size: 32px;
+  }
+  .location {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3.6px;
+  }
+  .more {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 5px;
+    align-self: center;
+  }
+  .moreInfo {
+    width: 146px;
+    height: 56px;
+  }
+  .arrow {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+  }
+  .arrowActive {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+  }
+}
+@media (min-width: 1440px) {
+  .goodMorning {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 4px;
+  }
+  .itsCurrently {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 4px;
+  }
+  .time {
+    font-size: 200px;
+    line-height: 200px;
+    letter-spacing: -5px;
+  }
+  .GMT4 {
+    font-size: 40px;
+  }
+  .location {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 4.8px;
+  }
+  .TimeDiv {
+    transform: translate(0px, 60px);
+  }
+  .moreInfo {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+  }
+}

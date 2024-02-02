@@ -1,0 +1,47 @@
+.HeaderDiv {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -60px;
+}
+.HeaderDivNone {
+  display: flex;
+  align-items: flex-start;
+  opacity: 0;
+  margin-top: -300px;
+}
+.quote {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+.quoteDiv {
+  max-width: 573px;
+}
+.author {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.refresh {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .HeaderDiv{
+    align-items: baseline;
+  }
+  .quote {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .author {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
