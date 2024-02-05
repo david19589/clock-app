@@ -18,8 +18,16 @@ body {
   margin-right: auto;
   margin-top: -12px;
   overflow: hidden;
-  background-image: url(assets/mobile/bg-image-daytime.jpg);
+  background-image: url(assets/desktop/bg-image-daytime.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(0.7);
+}
+.nightBody {
+  background-image: url(assets/desktop/bg-image-nighttime.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   backdrop-filter: brightness(0.7);
 }
@@ -30,17 +38,15 @@ body {
   grid-template-rows: repeat(2, auto);
   height: 110vh;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   body {
-    background-image: url(assets/tablet/bg-image-daytime.jpg);
     background-position: center;
     padding-left: 64px;
     padding-right: 64px;
   }
 }
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   body {
-    background-image: url(assets/desktop/bg-image-daytime.jpg);
     background-position: center;
     padding-left: 165px;
     padding-right: 165px;
