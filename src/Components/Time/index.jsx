@@ -2,11 +2,11 @@
 import Styles from "./Time.module.css";
 import { useState, useEffect, useRef } from "react";
 import SunImg from "/src/assets/desktop/icon-sun.svg";
+import MoonImg from "/src/assets/desktop/icon-moon.svg";
 import axios from "axios";
 
 const Time = (props) => {
   const [Time, setTime] = useState();
-  const [formattedTime, setFormattedTime] = useState();
   const [Abbreviation, setAbbreviation] = useState();
   const [TimeZone, setTimeZone] = useState();
 
@@ -22,6 +22,8 @@ const Time = (props) => {
 
   const hoverRef = useRef(null);
   const textChangeRef = useRef(null);
+  const textChangeRef2 = useRef(null);
+  const ImgChangeRef = useRef(null);
 
   function formatTime(value) {
     if (value < 10) {
@@ -46,11 +48,41 @@ const Time = (props) => {
     setTime(formatTime(h) + h + ":" + formatTime(m) + m);
   }
 
+  useEffect(() => {
+    const setDaytimeOrNighttime = () => {
+      const currentHour = new Date().getHours();
+      const isNightTime = currentHour >= 18 || currentHour <= 5;
+
+      document.body.className = "";
+      
+
+      if (isNightTime) {
+        textChangeRef2.current.textContent = "Good Evening";
+        document.body.className = "";
+        {ImgChangeRef.current.src = MoonImg}
+      } else {
+        if (currentHour > 12 && currentHour < 18) {
+          textChangeRef2.current.textContent = "Good Afternoon";
+        } else {
+          textChangeRef2.current.textContent = "Good Morning";
+        }
+      }
+    };
+
+    setDaytimeOrNighttime();
+
+    const intervalId = setInterval(setDaytimeOrNighttime, 60 * 60 * 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className={Styles.TimeDiv}>
       <div className={Styles.sunMorningDiv}>
-        <img src={SunImg} alt="sun" className={Styles.sun} />
-        <h1 className={Styles.goodMorning}>GOOD MORNING </h1>
+        <img ref={ImgChangeRef} src={SunImg} alt="sun" className={Styles.sun} />
+        <h1 ref={textChangeRef2} className={Styles.goodMorning}>
+          GOOD MORNING{" "}
+        </h1>
         <h1 className={Styles.itsCurrently}>, IT’S CURRENTLY</h1>
       </div>
       <div className={Styles.timeZone}>
