@@ -160,11 +160,11 @@
     letter-spacing: 4.8px;
   }
   .TimeDiv {
-    transform: translate(0px, 60px);
+    transform: translate(0px, 40px);
   }
   .moreInfo {
     position: absolute;
     right: 0px;
-    bottom: 50px;
+    bottom: 25px;
   }
 }
